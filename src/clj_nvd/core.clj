@@ -53,5 +53,5 @@
         (.println *err* (string/join \newline errors))
         (System/exit 1))
 
-      true
+      :else
       (run-nvd (:aliases options) (first arguments) (rest arguments)))))
